@@ -8,9 +8,14 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
 /* Header Styling */
 .header {
+    grid-area: 1 / 2 / 2 / 7;
     display: flex;
     flex-direction: column;
     height: 20vh;
@@ -87,6 +92,17 @@
     border: none;
     padding: 10px;
     width: 6rem;
+}
+
+/* Sidebar Styling */
+.search-bar {
+    /* looks weird in developer tools, bc no content? */
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+/* Main Content Styling */
+.main-content {
+    grid-area: 2 / 2 / 3 / 3;
 }
 /* Icon Styling */
 .icon {
