@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.pfp-wrap-sm,
+.pfp-wrap-m {
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(212, 74, 74);
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp-wrap-sm {
+    height: 100px;
+    width: 100px;
+}
+
+.pfp-wrap-m {
+    height: 200px;
+    width: 200px;
+}
+
+.pfp-sm {
+    width: 75%;
+    height: auto;
+}
+
+.pfp-m {
+    width: 75%;
+    height: auto;
+}
