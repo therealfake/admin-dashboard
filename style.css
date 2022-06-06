@@ -109,9 +109,14 @@ body {
     background-color: var(--light-grey);
 }
 /* Icon Styling */
-.icon {
+.icon-s {
     width: 32px;
     height: 32px;
+}
+
+.icon-l {
+    width: 54px;
+    height: 54px;
 }
 
 /* Profile Picture Styling */
