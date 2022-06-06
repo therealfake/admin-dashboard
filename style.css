@@ -1,5 +1,6 @@
 :root {
-    --header-gap: 1.5rem;
+    --header-gap: 1.3rem;
+    --sidebar-gap: 1rem;
     /* --light-red: rgb(212, 74, 74); */
     --light-red: rgb(185, 80, 80);
     --light-grey: rgb(226, 232, 240)
@@ -13,7 +14,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
 }
 /* Header Styling */
 .header {
@@ -100,7 +101,36 @@ body {
 .sidebar {
     /* looks weird in developer tools, bc no content? */
     grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: 1fr 1fr 2fr; */
+    gap: 3rem;
     background-color: var(--light-red);
+    color: white;
+    padding: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    gap: var(--sidebar-gap);
+    align-items: center;
+}
+
+.general-nav,
+.site-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.general-nav > div,
+.site-nav > div { 
+    display: flex;
+    gap: var(--sidebar-gap);
+}
+
+.site-nav {
+    margin-top: 1.5rem;
 }
 
 /* Main Content Styling */
