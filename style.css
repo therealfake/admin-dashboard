@@ -158,6 +158,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
 }
+
 /* Pokemon Card Styling */
 .card {
     display: grid;
