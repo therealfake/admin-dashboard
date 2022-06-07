@@ -18,6 +18,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 7fr;
+    overflow:hidden;
 }
 
 /* Header Styling */
@@ -145,10 +146,21 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 40px 30px;
+    height: fit-content;
 }
 
 .side-info {
     display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* Main Content - Right Side Info */
+.announcements {
+    grid-row: 1 / 2;
+}
+
+.trending {
+    grid-row: 2 / 3;
 }
 
 /* Pokemon Cards Continer */
