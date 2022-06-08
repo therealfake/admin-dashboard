@@ -166,7 +166,15 @@ body {
     display: grid;
     background-color: white;
     border-radius: 15px;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    gap: 2rem;
+}
+
+.announcements > div {
+    padding: 10px;
 }
 
 .side-info .bottom {
